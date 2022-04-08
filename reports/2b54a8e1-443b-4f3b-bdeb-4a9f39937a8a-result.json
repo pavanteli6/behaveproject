@@ -1,0 +1,61 @@
+{
+  "name": "Login with valid credentials",
+  "status": "broken",
+  "statusDetails": {
+    "message": "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@class='btn btn-block btn-default btn-lg mb-3 undefined']\"}\n  (Session info: chrome=99.0.4844.82)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00DE9943+2595139]\n\tOrdinal0 [0x00D7C9F1+2148849]\n\tOrdinal0 [0x00C74528+1066280]\n\tOrdinal0 [0x00CA0FD4+1249236]\n\tOrdinal0 [0x00CA11CB+1249739]\n\tOrdinal0 [0x00CCD812+1431570]\n\tOrdinal0 [0x00CBBA34+1358388]\n\tOrdinal0 [0x00CCBAF2+1424114]\n\tOrdinal0 [0x00CBB806+1357830]\n\tOrdinal0 [0x00C96086+1204358]\n\tOrdinal0 [0x00C96F96+1208214]\n\tGetHandleVerifier [0x00F8B232+1658114]\n\tGetHandleVerifier [0x0104312C+2411516]\n\tGetHandleVerifier [0x00E7F261+560433]\n\tGetHandleVerifier [0x00E7E366+556598]\n\tOrdinal0 [0x00D8286B+2173035]\n\tOrdinal0 [0x00D875F8+2192888]\n\tOrdinal0 [0x00D876E5+2193125]\n\tOrdinal0 [0x00D911FC+2232828]\n\tBaseThreadInitThunk [0x76B6FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77447A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77447A6E+238]\n\n",
+    "trace": "  File \"c:\\users\\pavan.teli\\pycharmprojects\\behavepython\\venv\\lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"c:\\users\\pavan.teli\\pycharmprojects\\behavepython\\venv\\lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\loginSteps.py\", line 31, in ClickLogin\n    clickOnLogin = context.driver.find_element_by_xpath(\"//button[@class='btn btn-block btn-default btn-lg mb-3 undefined']\").click()\n  File \"c:\\users\\pavan.teli\\pycharmprojects\\behavepython\\venv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 521, in find_element_by_xpath\n    return self.find_element(by=By.XPATH, value=xpath)\n  File \"c:\\users\\pavan.teli\\pycharmprojects\\behavepython\\venv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 1248, in find_element\n    return self.execute(Command.FIND_ELEMENT, {\n  File \"c:\\users\\pavan.teli\\pycharmprojects\\behavepython\\venv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 425, in execute\n    self.error_handler.check_response(response)\n  File \"c:\\users\\pavan.teli\\pycharmprojects\\behavepython\\venv\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 247, in check_response\n    raise exception_class(message, screen, stacktrace)\n"
+  },
+  "steps": [
+    {
+      "name": "Given Open the chrome and start application",
+      "status": "passed",
+      "start": 1648131414110,
+      "stop": 1648131422279
+    },
+    {
+      "name": "When I enter valid username \"pavanteli6@gmail.com\" and password \"pavan@123\"",
+      "status": "passed",
+      "start": 1648131422280,
+      "stop": 1648131428572
+    },
+    {
+      "name": "And click on login button",
+      "status": "broken",
+      "statusDetails": {
+        "message": "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@class='btn btn-block btn-default btn-lg mb-3 undefined']\"}\n  (Session info: chrome=99.0.4844.82)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00DE9943+2595139]\n\tOrdinal0 [0x00D7C9F1+2148849]\n\tOrdinal0 [0x00C74528+1066280]\n\tOrdinal0 [0x00CA0FD4+1249236]\n\tOrdinal0 [0x00CA11CB+1249739]\n\tOrdinal0 [0x00CCD812+1431570]\n\tOrdinal0 [0x00CBBA34+1358388]\n\tOrdinal0 [0x00CCBAF2+1424114]\n\tOrdinal0 [0x00CBB806+1357830]\n\tOrdinal0 [0x00C96086+1204358]\n\tOrdinal0 [0x00C96F96+1208214]\n\tGetHandleVerifier [0x00F8B232+1658114]\n\tGetHandleVerifier [0x0104312C+2411516]\n\tGetHandleVerifier [0x00E7F261+560433]\n\tGetHandleVerifier [0x00E7E366+556598]\n\tOrdinal0 [0x00D8286B+2173035]\n\tOrdinal0 [0x00D875F8+2192888]\n\tOrdinal0 [0x00D876E5+2193125]\n\tOrdinal0 [0x00D911FC+2232828]\n\tBaseThreadInitThunk [0x76B6FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77447A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77447A6E+238]\n\n",
+        "trace": "  File \"c:\\users\\pavan.teli\\pycharmprojects\\behavepython\\venv\\lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"c:\\users\\pavan.teli\\pycharmprojects\\behavepython\\venv\\lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\loginSteps.py\", line 31, in ClickLogin\n    clickOnLogin = context.driver.find_element_by_xpath(\"//button[@class='btn btn-block btn-default btn-lg mb-3 undefined']\").click()\n  File \"c:\\users\\pavan.teli\\pycharmprojects\\behavepython\\venv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 521, in find_element_by_xpath\n    return self.find_element(by=By.XPATH, value=xpath)\n  File \"c:\\users\\pavan.teli\\pycharmprojects\\behavepython\\venv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 1248, in find_element\n    return self.execute(Command.FIND_ELEMENT, {\n  File \"c:\\users\\pavan.teli\\pycharmprojects\\behavepython\\venv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 425, in execute\n    self.error_handler.check_response(response)\n  File \"c:\\users\\pavan.teli\\pycharmprojects\\behavepython\\venv\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 247, in check_response\n    raise exception_class(message, screen, stacktrace)\n"
+      },
+      "start": 1648131428572,
+      "stop": 1648131428615
+    },
+    {
+      "name": "Then user should be able to login successfully",
+      "status": "skipped",
+      "start": 1648131428618,
+      "stop": 1648131428618
+    }
+  ],
+  "start": 1648131414109,
+  "stop": 1648131428618,
+  "uuid": "207e9e97-9088-4bce-b52a-ef8762d8f86b",
+  "historyId": "77457477f46356f36fb6c36dde9dd152",
+  "fullName": "Test traveller login scenario: Login with valid credentials",
+  "labels": [
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "feature",
+      "value": "Test traveller login scenario"
+    },
+    {
+      "name": "framework",
+      "value": "behave"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    }
+  ]
+}
